@@ -21,6 +21,7 @@
         .form-control {
             text-align: left;
             margin-bottom: 25px;
+            font-weight: bold;
         }
  
         /* Styling form-control Label */
@@ -41,25 +42,52 @@
             display: block;
             width: 95%;
         }
+        .form-control-name {
+            text-align: left;
+            font-weight: bold;            
+            margin-bottom: 25px;
+        }
+        
+        .inline {
+            display: inline;
+          }
+          .form-control-fname {
+            text-align: left;
+            width: 45%;
+            float: left;
+        }
+ 
+          .form-control-lname {
+            text-align: left;
+            width: 50%;
+            float: right;
+        }
+        .fname-helper { 
+            font-weight: normal;
+        }
+        .lname-helper {           
+            padding-left: 200px;
+            font-weight: normal;
+        }
+        .checked {
+            color: rgb(255, 168, 6);
+          }
+         
  
         /* Styling form-control Radio
         button and Checkbox */
-        .form-control input[type="radio"],
+        /* .form-control input[type="radio"],
         .form-control input[type="checkbox"] {
             display: inline-block;
             width: auto;
         }
- 
+  */
         /* Styling Button */
         button {
-            background-color: #c4058b;
-            border: 1px solid #777;
-            border-radius: 2px;
-            font-family: inherit;
-            font-size: 21px;
-            display: block;
-            width: 100%;
-            margin-top: 50px;
-            margin-bottom: 20px;
+           float: left;
         }
+       .thead {
+            font-size: 8px;
+            font-weight: normal;
+          }
    

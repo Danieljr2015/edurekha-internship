@@ -7,6 +7,7 @@
     <meta name="viewport" content=
         "width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="survey.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>
         Build a Survey Form using HTML and CSS
     </title>
@@ -21,20 +22,28 @@
     <form id="form">
  
         <!-- Details -->
-        <div class="form-control">
+        <div class="form-control-name">
             <label for="name" id="label-name">
-                Name
-            </label>
- 
+                Name<span style="color: red">*</span>
+            </label><br />
             <!-- Input Type Text -->
-            <input type="text"
-                   id="name"
-                   placeholder="Enter your name" />
+            <span class="inline">
+                <div>
+                <input type="text" class="form-control-fname" id="fname" placeholder="Enter your first name" />
+                </div>
+                
+
+                <!-- Input Type Text -->
+                <div>
+                <input type="text" class="form-control-lname" id="lname" placeholder="Enter your last name" />
+                </div>  
+            </span>
+            <span class="fname-helper"> First </span> <span class="lname-helper"> Last </span>
         </div>
   
         <div class="form-control">
             <label for="email" id="label-email">
-                Email
+                Email<span style="color: red">*</span>
             </label>
  
             <!-- Input Type Email-->
@@ -44,84 +53,44 @@
         </div>
   
         <div class="form-control">
-            <label for="age" id="label-age">
-                Age
+            <label for="experiences" id="label-email">
+                Your Experiences<span style="color: red">*</span>
             </label>
- 
-            <!-- Input Type Text -->
-            <input type="text"
-                   id="age"
-                   placeholder="Enter your age" />
+            <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<br />
+<span class="fname-helper">Overall, how would you rate your experience with us </span>
+        </div>
+        <div class="form-control">
+            <label for="experiences" id="label-email">
+                How satisfied are you with<span style="color: red">*</span>
+            </label>
         </div>
   
         <div class="form-control">
             <label for="role" id="label-role">
                 Which option best describes you?
-            </label>
-             
-            <!-- Dropdown options -->
-            <select name="role" id="role">
-                <option value="student">Student</option>
-                <option value="intern">Intern</option>
-                <option value="professional">
-                    Professional
-                </option>
-                <option value="other">Other</option>
-            </select>
+            </label>            
+            
         </div>
+        <table>
+            <tr class="thead">
+                <th></th>
+                <th>Very Unsatisfied</th>
+                <th>Unsatisfied</th>
+                <th>Neutral</th>
+                <th>Satisfied</th>
+                <th>Very satisfied</th>
+            </tr>
+        </table>
   
-        <div class="form-control">
-            <label>
-                Do you like this program?
-            </label>
- 
-            <!-- Input Type Radio Button -->
-            <label for="recommed-1">
-                <input type="radio"
-                       id="recommed-1"
-                       name="recommed">Yes</input>
-            </label>
-            <label for="recommed-2">
-                <input type="radio"
-                       id="recommed-2"
-                       name="recommed">No</input>
-            </label>
-            <label for="recommed-3">
-                <input type="radio"
-                       id="recommed-3"
-                       name="recommed">Maybe</input>
-            </label>
-        </div>
-  
-        <div class="form-control">
-            <label>Skills you want to select?
-                <small>(Check all that apply)</small>
-            </label>
-            <!-- Input Type Checkbox -->
-            <label for="inp-1">
-                <label for="inp-1">   
-                <input type="checkbox"
-                       name="inp">HTML</input></label>
-            <label for="inp-2">
-                <input type="checkbox"
-                       name="inp">CSS</input></label>
-            <label for="inp-3">
-                <input type="checkbox"
-                       name="inp">JavaScript</input></label>
-            <label for="inp-4">
-                <input type="checkbox"
-                       name="inp">Angular</input></label>
-            <label for="inp-5">
-                <input type="checkbox"
-                       name="inp">React</input></label>
-            <label for="inp-6">
-                <input type="checkbox"
-                       name="inp">AWS Cloud</input></label>
-        </div>
   
         <div class="form-control">
             <label for="comment">
-                Comments or Queries
+               Additional comments or Suggestions
             </label>
  
             <!-- multi-line text input control -->
@@ -129,7 +98,6 @@
                 placeholder="Enter your comment here">
             </textarea>
         </div>
-  
         <!-- Multi-line Text Input Control -->
         <button type="submit" value="submit">
             Submit
