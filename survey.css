@@ -70,16 +70,7 @@
         .checked {
             color: rgb(255, 168, 6);
           }
-         
- 
-        /* Styling form-control Radio
-        button and Checkbox */
-        /* .form-control input[type="radio"],
-        .form-control input[type="checkbox"] {
-            display: inline-block;
-            width: auto;
-        }
-  */
+          
         /* Styling Button */
         button {
            float: left;
@@ -87,4 +78,19 @@
        .thead {
             font-size: 8px;
             font-weight: normal;
+            text-align: left;
+          }
+          .thead1 {
+           width: 65px;
+          }
+          .thead2 {
+            width: 40px;
+           }
+           
+          .label {
+            font-size: 10px;
+          }
+          .label1 {
+            margin-left: 25px;
+            font-size: 10px;
           }

@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content=
-        "width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="survey.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="survey.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>
         Build a Survey Form using HTML and CSS
     </title>
- 
-    
+
+
 </head>
-  
+
 <body>
     <h1>Daniel Jeba Raj Survey Form</h1>
-  
+
     <!-- Create Form -->
     <form id="form">
- 
+
         <!-- Details -->
         <div class="form-control-name">
             <label for="name" id="label-name">
@@ -29,73 +28,132 @@
             <!-- Input Type Text -->
             <span class="inline">
                 <div>
-                <input type="text" class="form-control-fname" id="fname" placeholder="Enter your first name" />
+                    <input type="text" class="form-control-fname" id="fname" placeholder="Enter your first name" />
                 </div>
-                
+
 
                 <!-- Input Type Text -->
                 <div>
-                <input type="text" class="form-control-lname" id="lname" placeholder="Enter your last name" />
-                </div>  
+                    <input type="text" class="form-control-lname" id="lname" placeholder="Enter your last name" />
+                </div>
             </span>
             <span class="fname-helper"> First </span> <span class="lname-helper"> Last </span>
         </div>
-  
+
         <div class="form-control">
             <label for="email" id="label-email">
                 Email<span style="color: red">*</span>
             </label>
- 
+
             <!-- Input Type Email-->
-            <input type="email"
-                   id="email"
-                   placeholder="Enter your email" />
+            <input type="email" id="email" placeholder="Enter your email" />
         </div>
-  
+
         <div class="form-control">
             <label for="experiences" id="label-email">
                 Your Experiences<span style="color: red">*</span>
             </label>
             <span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<span class="fa fa-star checked"></span>
-<br />
-<span class="fname-helper">Overall, how would you rate your experience with us </span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <br />
+            <span class="fname-helper">Overall, how would you rate your experience with us </span>
         </div>
         <div class="form-control">
             <label for="experiences" id="label-email">
                 How satisfied are you with<span style="color: red">*</span>
             </label>
         </div>
-  
-        <div class="form-control">
-            <label for="role" id="label-role">
-                Which option best describes you?
-            </label>            
-            
-        </div>
+        <label class="label">Very Unsatisfied</label>
+        <label class="label">Unsatisfied</label>
+        <label class="label">Neutral</label>
+        <label class="label">Satisfied</label>
+        <label class="label">Very Satisfied</label>
+
         <table>
+
             <tr class="thead">
-                <th></th>
-                <th>Very Unsatisfied</th>
-                <th>Unsatisfied</th>
-                <th>Neutral</th>
-                <th>Satisfied</th>
-                <th>Very satisfied</th>
+                <th class="thead1">purchase</th>
+                <th><input type="radio" class="thead1"></input></th>
+                <th><input type="radio" class="thead1"></input></th>
+                <th><input type="radio" class="thead2"></input></th>
+                <th><input type="radio" class="thead1"></input></th>
+                <th><input type="radio" class="thead1"></input></th>
+
+            </tr>
+            <tr class="thead">
+                <th class="thead1">Service</th>
+                <th><input type="radio" class="thead1"></input></th>
+                <th><input type="radio" class="thead1"></input></th>
+                <th><input type="radio" class="thead2"></input></th>
+                <th><input type="radio" class="thead1"></input></th>
+                <th><input type="radio" class="thead1"></input></th>
+
+            </tr>
+            <tr class="thead">
+                <th class="thead1">Company Overall</th>
+                <th><input type="radio" class="thead1"></input></th>
+                <th><input type="radio" class="thead1"></input></th>
+                <th><input type="radio" class="thead2"></input></th>
+                <th><input type="radio" class="thead1"></input></th>
+                <th><input type="radio" class="thead1"></input></th>
+
             </tr>
         </table>
-  
-  
+        <br /><br />
+        <div class="form-control">
+            <label for="experiences" id="label-email">
+                How likely are you to<span style="color: red">*</span>
+            </label>
+        </div>
+        <label class="label1">Very Unlikely</label>
+        <label class="label1">Unlikely</label>
+        <label class="label1">Neutral</label>
+        <label class="label1">Likely</label>
+        <label class="label1">Very Likely</label>
+
+        <table>
+
+            <tr class="thead">
+                <th class="thead1">Buy from us again</th>
+                <th><input type="radio" class="thead1"></input></th>
+                <th><input type="radio" class="thead1"></input></th>
+                <th><input type="radio" class="thead2"></input></th>
+                <th><input type="radio" class="thead1"></input></th>
+                <th><input type="radio" class="thead1"></input></th>
+
+            </tr>
+            <tr class="thead">
+                <th class="thead1">Recommend our product to others</th>
+                <th><input type="radio" class="thead1"></input></th>
+                <th><input type="radio" class="thead1"></input></th>
+                <th><input type="radio" class="thead2"></input></th>
+                <th><input type="radio" class="thead1"></input></th>
+                <th><input type="radio" class="thead1"></input></th>
+
+            </tr>
+            <tr class="thead">
+                <th class="thead1">Recommend our company to others</th>
+                <th><input type="radio" class="thead1"></input></th>
+                <th><input type="radio" class="thead1"></input></th>
+                <th><input type="radio" class="thead2"></input></th>
+                <th><input type="radio" class="thead1"></input></th>
+                <th><input type="radio" class="thead1"></input></th>
+
+            </tr>
+        </table>
+        
+
+
         <div class="form-control">
             <label for="comment">
-               Additional comments or Suggestions
+                Additional comments or Suggestions
             </label>
- 
+
             <!-- multi-line text input control -->
-            <textarea name="comment" id="comment"
-                placeholder="Enter your comment here">
+            <textarea name="comment" id="comment" placeholder="Enter your comment here">
             </textarea>
         </div>
         <!-- Multi-line Text Input Control -->
@@ -104,5 +162,5 @@
         </button>
     </form>
 </body>
-  
+
 </html>
